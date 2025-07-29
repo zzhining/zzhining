@@ -12,10 +12,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# 강지영 (Luna) 👋
+# 강쯔닝 (Luna) 👋
 
 ## 🚀 About Me
-안녕하세요! 저는 **실용적인 AI/ML 서비스**를 지향하는 **IT/AI 컨설턴트**입니다. 
+안녕하세요! 해피쯔닝입니다. 운동하고, 맛있게 먹고, 정리하고, 생각하는 삶을 지향합니다. 
 
 - 📚 **정보관리기술사** (2019)
 - 🎓 **열린사이버대학교 인공지능융합학과 객원교수** (2022~현재)
@@ -91,5 +91,3 @@ Here are some ideas to get you started:
 - **Email**: zhining@naver.com
 
 ---
-
-*"데이터로 세상을 이해하고, AI로 더 스마트한 삶을 살아가는 것이 제 목표입니다."*
