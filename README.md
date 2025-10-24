@@ -12,8 +12,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# 강쯔닝 (Luna) 👋
-
 ## 🚀 About Me
 안녕하세요! 해피쯔닝입니다. 운동하고, 맛있게 먹고, 정리하고, 생각하는 삶을 지향합니다. 
 
