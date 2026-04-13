@@ -1,0 +1,46 @@
+---
+layout: default
+title: "블로그"
+permalink: /blog/
+---
+<div class="blog-header">
+  <div class="container">
+    <div class="blog-header-inner">
+      <h1 class="blog-title">블로그</h1>
+      <p class="blog-subtitle">경험과 인사이트를 공유하는 공간</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    {% if site.posts.size > 0 %}
+    <div class="posts-grid">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <div class="post-card-body">
+          {% if post.category %}
+          <span class="post-card-category">{{ post.category }}</span>
+          {% endif %}
+          <h2 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          <div class="post-card-meta">
+            <span class="post-card-date">
+              <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>
+              {{ post.date | date: "%Y.%m.%d" }}
+            </span>
+            <a href="{{ post.url | relative_url }}" class="post-card-link">읽기 →</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>아직 작성된 블로그 포스트가 없습니다.</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

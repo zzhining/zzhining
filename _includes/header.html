@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="site-logo" href="{{ '/' | relative_url }}">
+        <span class="logo-text">zzhining</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="{{ '/about/' | relative_url }}" class="nav-link{% if page.url contains '/about' %} active{% endif %}">About Me</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="{{ '/theory/' | relative_url }}" class="nav-link{% if page.url contains '/theory' %} active{% endif %}">
+              지식창고 <svg class="dropdown-arrow" viewBox="0 0 10 6" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="currentColor"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/theory/generative-ai/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/generative-ai' %} active{% endif %}">생성형 AI</a></li>
+              <li><a href="{{ '/theory/python-basics/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/python-basics' %} active{% endif %}">파이썬 기초</a></li>
+              <li><a href="{{ '/theory/data-analysis/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/data-analysis' %} active{% endif %}">데이터 분석</a></li>
+              <li><a href="{{ '/theory/dashboard/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/dashboard' %} active{% endif %}">대시보드 생성</a></li>
+              <li><a href="{{ '/theory/ml-dl/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/ml-dl' %} active{% endif %}">머신러닝/딥러닝</a></li>
+              <li><a href="{{ '/theory/data/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/data/' %} active{% endif %}">데이터</a></li>
+              <li><a href="{{ '/theory/software-engineering/' | relative_url }}" class="dropdown-link{% if page.url contains '/theory/software-engineering' %} active{% endif %}">소프트웨어엔지니어링</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="{{ '/blog/' | relative_url }}" class="nav-link{% if page.url contains '/blog' %} active{% endif %}">블로그</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="theory-wrapper">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="theory-sidebar">
+      <div class="sidebar-header">
+        <h3><a href="{{ '/theory/' | relative_url }}">지식창고</a></h3>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="{{ '/theory/generative-ai/' | relative_url }}" class="{% if page.url contains '/theory/generative-ai' %}active{% endif %}">생성형 AI</a></li>
+          <li><a href="{{ '/theory/python-basics/' | relative_url }}" class="{% if page.url contains '/theory/python-basics' %}active{% endif %}">파이썬 기초</a></li>
+          <li><a href="{{ '/theory/data-analysis/' | relative_url }}" class="{% if page.url contains '/theory/data-analysis' %}active{% endif %}">데이터 분석</a></li>
+          <li><a href="{{ '/theory/dashboard/' | relative_url }}" class="{% if page.url contains '/theory/dashboard' %}active{% endif %}">대시보드 생성</a></li>
+          <li><a href="{{ '/theory/ml-dl/' | relative_url }}" class="{% if page.url contains '/theory/ml-dl' %}active{% endif %}">머신러닝/딥러닝</a></li>
+          <li><a href="{{ '/theory/data/' | relative_url }}" class="{% if page.url contains '/theory/data/' %}active{% endif %}">데이터</a></li>
+          <li><a href="{{ '/theory/software-engineering/' | relative_url }}" class="{% if page.url contains '/theory/software-engineering' %}active{% endif %}">소프트웨어엔지니어링</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="theory-main">
+      <article class="theory-content">
+        {% if page.title %}
+        <header class="theory-header">
+          <h1 class="theory-title">{{ page.title }}</h1>
+          {% if page.description %}
+          <p class="theory-description">{{ page.description }}</p>
+          {% endif %}
+          {% if page.date %}
+          <div class="theory-meta">
+            <span class="theory-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
+          </div>
+          {% endif %}
+        </header>
+        {% endif %}
+        <div class="theory-body">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
