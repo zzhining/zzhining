@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="footer-logo">zzhining</a>
+        <p class="footer-desc">지식과 경험을 나누는 공간</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-group">
+          <h4>메뉴</h4>
+          <ul>
+            <li><a href="{{ '/about/' | relative_url }}">About Me</a></li>
+            <li><a href="{{ '/theory/' | relative_url }}">지식창고</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}">블로그</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>지식창고</h4>
+          <ul>
+            <li><a href="{{ '/theory/generative-ai/' | relative_url }}">생성형 AI</a></li>
+            <li><a href="{{ '/theory/python-basics/' | relative_url }}">파이썬 기초</a></li>
+            <li><a href="{{ '/theory/data-analysis/' | relative_url }}">데이터 분석</a></li>
+            <li><a href="{{ '/theory/dashboard/' | relative_url }}">대시보드 생성</a></li>
+            <li><a href="{{ '/theory/ml-dl/' | relative_url }}">머신러닝/딥러닝</a></li>
+            <li><a href="{{ '/theory/data/' | relative_url }}">데이터</a></li>
+            <li><a href="{{ '/theory/software-engineering/' | relative_url }}">소프트웨어엔지니어링</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} zzhining. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
